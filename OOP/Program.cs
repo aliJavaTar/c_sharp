@@ -1,34 +1,34 @@
 ﻿using OOP;
 
 
-List<Student> students =
-[
-    new() { Id = 1, Name = "Vinay Tyagi", Gender = "Male", Location = "Chennai" },
-    new() { Id = 2, Name = "Vaishali Tyagi", Gender = "Female", Location = "Chennai" },
-    new() { Id = 3, Name = "Montu Tyagi", Gender = "Male", Location = "Bangalore" },
-    new() { Id = 4, Name = "Akshay Tyagi", Gender = "Male", Location = "Vizag" },
-    new() { Id = 5, Name = "Arpita Rai", Gender = "Male", Location = "Nagpur" }
-];
+// List<Student> students =
+// [
+//     new() { Id = 1, Name = "Vinay Tyagi", Gender = "Male", Location = "Chennai" },
+//     new() { Id = 2, Name = "Vaishali Tyagi", Gender = "Female", Location = "Chennai" },
+//     new() { Id = 3, Name = "Montu Tyagi", Gender = "Male", Location = "Bangalore" },
+//     new() { Id = 4, Name = "Akshay Tyagi", Gender = "Male", Location = "Vizag" },
+//     new() { Id = 5, Name = "Arpita Rai", Gender = "Male", Location = "Nagpur" }
+// ];
+//
+// var dictionary = students.ToDictionary(student => student.Id, student => student.Gender == "Female" ? "Male" : "Female");
+// foreach (var keyValuePair in dictionary)
+// {
+//     Console.WriteLine($"{keyValuePair.Key} - {keyValuePair.Value}");
+// }
 
-var dictionary = students.ToDictionary(student => student.Id, student => student.Gender == "Female" ? "Male" : "Female");
-foreach (var keyValuePair in dictionary)
-{
-    Console.WriteLine($"{keyValuePair.Key} - {keyValuePair.Value}");
-}
-
-public class Student
-{
-    public int Id { get; set; }
-    public string? Name { get; set; }
-    public string? Gender { get; set; }
-    public string? Location { get; set; }
-
-    public override string ToString()
-    {
-        return
-            $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(Gender)}: {Gender}, {nameof(Location)}: {Location}";
-    }
-}
+// public class Student
+// {
+//     public int Id { get; set; }
+//     public string? Name { get; set; }
+//     public string? Gender { get; set; }
+//     public string? Location { get; set; }
+//
+//     public override string ToString()
+//     {
+//         return
+//             $"{nameof(Id)}: {Id}, {nameof(Name)}: {Name}, {nameof(Gender)}: {Gender}, {nameof(Location)}: {Location}";
+//     }
+// }
 
 // List<string> productNames = ["Laptop", "Smartphone", "Headphones", "Monitor"];
 //
